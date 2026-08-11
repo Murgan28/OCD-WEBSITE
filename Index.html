@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>For Nidhu ✨</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Background Glowing Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle-btn" class="floating-theme-btn" title="Toggle Theme">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <div class="container">
+
+    <!-- ================= SCREEN 1: WELCOME PAGE ================= -->
+    <div id="welcome-screen" class="screen active">
+      <div class="welcome-header">
+        <span class="sub-badge">A SPECIAL SPACE FOR</span>
+        <h1 class="hero-name glow-text">NIDHU</h1>
+        <p class="tagline">"Distance changes nothing when the bond is genuine."</p>
+      </div>
+
+      <div class="quote-card glass-card float-anim">
+        <span class="quote-icon">“</span>
+        <p id="hero-quote">You might keep your distance and call me messy, but my intentions will always be pure for you.</p>
+      </div>
+
+      <div class="welcome-frames">
+        <div class="glow-frame-card">
+          <div class="glow-frame-inner">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500&q=80" alt="Distance Frame">
+            <div class="frame-tag">The Germaphobe Zone 🧼</div>
+          </div>
+          <p class="glow-frame-desc">"Keep 5 feet away!" — Yet I'm still right here.</p>
+        </div>
+
+        <div class="glow-frame-card">
+          <div class="glow-frame-inner">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=500&q=80" alt="Unconditional Bond">
+            <div class="frame-tag">The Unbreakable Quirk ⚡</div>
+          </div>
+          <p class="glow-frame-desc">No matter how many times OCD triggers, you'll always be my best friend.</p>
+        </div>
+      </div>
+
+      <div class="envelope-trigger-wrapper" id="start-btn">
+        <div class="envelope-3d pulse-glow">
+          <div class="envelope-seal">💌</div>
+          <p class="envelope-text">Click To Open Vault</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ================= SCREEN 2: PASSWORD SCREEN ================= -->
+    <div id="password-screen" class="screen">
+      <div class="card glass-card pass-card">
+        <div class="emoji-avatar-box">
+          <span id="dynamic-emoji" class="emoji-display">😏</span>
+        </div>
+        
+        <h2 class="pass-title">Security Check, Nidhu!</h2>
+        <p id="dynamic-attitude-text" class="attitude-quote">
+          "Oh look who's trying to enter... Enter the secret passcode to unlock!"
+        </p>
+
+        <div class="pin-dots-wrapper">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="input-container">
+          <input type="password" id="pass-input" placeholder="Enter Code (OCD)..." maxlength="10" autocomplete="off">
+          <button id="unlock-btn" class="glow-button">Unlock</button>
+        </div>
+
+        <button id="hint-btn" class="hint-trigger">💡 Need A Hint?</button>
+        <p id="hint-msg" class="hint-box">
+          Hint: The 3 letters that summarize your clean-freak routine! (OCD)
+        </p>
+
+        <div id="error-box" class="error-box">
+          <span id="error-emoji">😒</span>
+          <p id="error-msg-text">Wrong code! Step back and try again!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ================= SCREEN 3: MAIN LETTER PAGE ================= -->
+    <div id="main-screen" class="screen">
+      
+      <!-- Top Action Toolbar -->
+      <div class="action-bar glass-card">
+        <button class="tool-btn" id="confetti-btn">🎉 Celebrate</button>
+        <button class="tool-btn" id="read-aloud-btn">🔊 Read Letter</button>
+        <button class="tool-btn stop-btn" id="stop-read-btn" style="display: none;">⏹️ Stop</button>
+        <button class="tool-btn primary-glow-btn" id="top-goto-book-btn">📖 Next: Storybook ✨</button>
+      </div>
+
+      <!-- Letter Card -->
+      <div class="parchment-letter-card">
+        <div class="parchment-texture"></div>
+        <div class="wax-seal">N</div>
+        <div class="stamp-mark">CONFIDENTIAL</div>
+
+        <h1 class="letter-salutation">Dearest Nidhu,</h1>
+        
+        <div class="letter-content" id="letter-text-content">
+          <p>
+            I know things get a bit overwhelming between us at times. Whenever your OCD kicks in, you naturally build distance and act like I’m somehow "dirty" or unhygienic. You react with that signature strong-willed personality that makes you who you are.
+          </p>
+          <p>
+            I honestly don’t know why your clean tendencies flare up around me, but listen to me carefully: <strong>it is 100% okay.</strong> I have completely adapted to it, and no amount of distance or hand sanitizer will ever push me away from this bond.
+          </p>
+          <p>
+            In those moments, you might see me as messy or unpolished. But even if my exterior isn't up to your spotless standards, <strong>my heart is clean, pure, and filled with genuine care for you.</strong>
+          </p>
+          <p class="letter-highlight-box">
+            I am your best friend, and I am the best brother you will ever have in your life. I will adjust to every single quirk, every ritual, and every mood swing you throw at me. I'm never leaving your side, Nidhu.
+          </p>
+        </div>
+
+        <div class="letter-signature">
+          <p>Always standing by you,</p>
+          <span>Your Best Friend & Brother 🤍</span>
+        </div>
+      </div>
+
+      <!-- Photo Grid Section -->
+      <h2 class="section-title glow-text">The Unbreakable Bond</h2>
+      <div class="photo-grid">
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80" alt="Best Friend"></div>
+          <h3>Distance Means Nothing</h3>
+          <p>Keep your 5-foot distance all you want, my care stays right beside you.</p>
+        </div>
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=500&q=80" alt="Personality"></div>
+          <h3>High Standards, Bigger Heart</h3>
+          <p>Your strong-willed personality might be tough, but I’m tougher.</p>
+        </div>
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=80" alt="Pure Heart"></div>
+          <h3>Pure Intentions</h3>
+          <p>Call me messy, but my soul and intentions for you are crystal clear.</p>
+        </div>
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&w=500&q=80" alt="Sanitizer Shield"></div>
+          <h3>The Sanitizer Shield 🧴</h3>
+          <p>OCD flare-ups are temporary; our bond is permanent.</p>
+        </div>
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80" alt="Brotherhood"></div>
+          <h3>Best Brother Promise</h3>
+          <p>Promising to hold down the fort through every single argument.</p>
+        </div>
+        <div class="photo-frame-card">
+          <div class="frame-img-wrapper"><img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=500&q=80" alt="Forever Support"></div>
+          <h3>Forever Adjusting</h3>
+          <p>No matter the rules you set, I'll adapt without complaints.</p>
+        </div>
+      </div>
+
+      <!-- Accordion Section -->
+      <div class="rules-section glass-card">
+        <h2>Nidhu's Survival Rules I Secretly Follow 😉</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Rule 1: Sanitizer First, Talks Later 🧼</button>
+            <div class="accordion-content"><p>I know if I don't wash my hands before sitting nearby, I get the death stare!</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Rule 2: The 5-Foot Personal Space Bubble 📏</button>
+            <div class="accordion-content"><p>Even if you tell me to step back because I'm "dirty," I'll still be listening to every word you say.</p></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Rule 3: You Win Every Argument 👑</button>
+            <div class="accordion-content"><p>With that fiery personality of yours, arguing is pointless anyway. You win!</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big Bottom Next Button -->
+      <div class="next-page-container">
+        <button id="bottom-goto-book-btn" class="next-screen-btn pulse-glow">
+          Open Storybook & Secret Hampers 📖 👉
+        </button>
+      </div>
+    </div>
+
+
+    <!-- ================= SCREEN 4: STORYBOOK, GIFTS & EMOJIS ================= -->
+    <div id="book-screen" class="screen">
+      
+      <!-- Top Navigation Control Bar -->
+      <div class="nav-control-bar glass-card">
+        <button id="home-btn" class="nav-btn">🏠 Home</button>
+        <button id="back-letter-btn" class="nav-btn">✉️ Back to Letter</button>
+      </div>
+
+      <!-- 3D Storybook -->
+      <div class="book-container">
+        <div class="book-card-3d">
+          <div class="book-cover">
+            <div class="book-title-glow">The Chronicles of Nidhu</div>
+            <p class="book-subtitle">"Understanding the Quirk, Cherishing the Bond"</p>
+            <div class="book-emblem">📖 ✨</div>
+          </div>
+          <div class="book-page">
+            <h2 class="book-chapter">Chapter 1: Beyond The OCD Distance</h2>
+            <div class="glowing-book-text">
+              <p>
+                People see your OCD and might mistake it for arrogance or coldness. They don't understand the inner storm or the quiet need for order. But I do. When you step back or ask for space, I see it for what it is—a wall you build to feel safe.
+              </p>
+              <p>
+                My intentions toward you are strictly about protecting your peace and keeping you happy. I don't know why your OCD flares up around me, but even if you see me as chaotic, my heart is completely pure in its intent to be the best friend and brother ever.
+              </p>
+              <p class="highlight-book-quote">
+                "Real loyalty isn't loving someone when they are easy. It's standing firm, hand sanitizer ready, when they are at their most complex."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Gift Hampers Section -->
+      <h2 class="section-title glow-text" style="margin-top: 40px;">Mystery Gift Hampers 🎁</h2>
+      <p class="sub-caption">Click a hamper to reveal secret messages! Two of them require the password.</p>
+
+      <div class="gift-grid">
+        <div class="gift-card locked-gift" data-gift-id="1">
+          <div class="gift-box-anim">🎁</div>
+          <span class="gift-status">🔒 Locked (OCD)</span>
+          <h3>Hamper #1</h3>
+        </div>
+        <div class="gift-card locked-gift" data-gift-id="2">
+          <div class="gift-box-anim">🎁</div>
+          <span class="gift-status">🔒 Locked (OCD)</span>
+          <h3>Hamper #2</h3>
+        </div>
+        <div class="gift-card free-gift" data-gift-id="3">
+          <div class="gift-box-anim">🎁</div>
+          <span class="gift-status">✨ Tap to Open</span>
+          <h3>Hamper #3</h3>
+        </div>
+        <div class="gift-card free-gift" data-gift-id="4">
+          <div class="gift-box-anim">🎁</div>
+          <span class="gift-status">✨ Tap to Open</span>
+          <h3>Hamper #4</h3>
+        </div>
+        <div class="gift-card free-gift" data-gift-id="5">
+          <div class="gift-box-anim">🎁</div>
+          <span class="gift-status">✨ Tap to Open</span>
+          <h3>Hamper #5</h3>
+        </div>
+      </div>
+
+      <!-- Gift Modal Popup -->
+      <div id="gift-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+          <span id="close-modal" class="close-btn">&times;</span>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+
+      <!-- Interactive Attitude Emojis -->
+      <h2 class="section-title glow-text" style="margin-top: 40px;">The Mood Spectrum 🎭</h2>
+      <p class="sub-caption">Tap any emoji to flip her attitude into a wholesome truth!</p>
+
+      <div class="emoji-reaction-grid">
+        <div class="emoji-card" data-index="0">
+          <div class="emoji-icon">😒</div>
+          <p class="emoji-label">"Stay Away"</p>
+        </div>
+        <div class="emoji-card" data-index="1">
+          <div class="emoji-icon">😤</div>
+          <p class="emoji-label">"Fiery Mood"</p>
+        </div>
+        <div class="emoji-card" data-index="2">
+          <div class="emoji-icon">🙄</div>
+          <p class="emoji-label">"High Attitude"</p>
+        </div>
+        <div class="emoji-card" data-index="3">
+          <div class="emoji-icon">🧼</div>
+          <p class="emoji-label">"Clean Freak"</p>
+        </div>
+        <div class="emoji-card" data-index="4">
+          <div class="emoji-icon">👑</div>
+          <p class="emoji-label">"Queen Complex"</p>
+        </div>
+      </div>
+
+      <div id="emoji-display-box" class="emoji-quote-box glass-card">
+        <p id="emoji-quote-text">✨ Tap any mood emoji above to reveal the deeper meaning behind it!</p>
+      </div>
+
+      <!-- Bottom Home Button -->
+      <div style="margin-top: 40px; margin-bottom: 20px;">
+        <button id="bottom-home-btn" class="nav-btn" style="padding: 12px 28px; font-size: 1rem; background: var(--accent-pink); color: #fff;">🏠 Back To Welcome Page</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
